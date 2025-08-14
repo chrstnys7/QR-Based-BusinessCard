@@ -10,7 +10,7 @@ function HomeScreen(){
             <h1 className="intro">Hello,<br />I'm Christine <br /> of SMDC</h1>
             <div className="userImage">
                 <img src={userImage} alt="photo" />
-                <Link to="/info" className='continue'>Let'ss Connect!</Link>
+                <Link to="/info" className='continue'>Let's Connect!</Link>
             </div>
         </div>
     );

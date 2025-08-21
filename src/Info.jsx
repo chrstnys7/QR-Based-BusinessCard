@@ -1,4 +1,4 @@
-import profilePic from './assets/profilePic.png'
+import profilePic from './assets/ProfilePic.png'
 import facebookLogo from './assets/facebook-logo.png'
 import instagramLogo from './assets/Instagram-Logo.png'
 import youtubeLogo from './assets/Youtube-logo.png'

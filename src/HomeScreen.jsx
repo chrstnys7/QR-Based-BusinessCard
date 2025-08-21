@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import logo from './assets/logo.png'
 import userImage from './assets/FrontPicture.png'
 import smdcImage from './assets/SMDC.jpg'
 

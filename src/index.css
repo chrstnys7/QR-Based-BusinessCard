@@ -227,3 +227,25 @@ body {
       width: 80%;
     }
 }
+
+@media (max-width: 320px) {
+  .smdc-image {
+      margin-top: 170px;
+    }
+
+    #home-description {
+        top: 42%;
+        font-size: 0.7rem;
+        width: 180px;
+    }
+
+    .userImage img {
+      width: 300px;
+      margin-top: -90px;
+      margin-left: -150px;
+    }
+
+    #home-continue {
+      padding: 5px 20px;
+    }
+}

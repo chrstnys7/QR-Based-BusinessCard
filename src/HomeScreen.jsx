@@ -1,16 +1,18 @@
 import { Link } from 'react-router-dom'
 import logo from './assets/logo.png'
-import userImage from './assets/userImage.png'
+import userImage from './assets/FrontPicture.png'
+import smdcImage from './assets/SMDC.jpg'
 
 function HomeScreen(){
     
     return(
         <div className="container">
-            <img className="logo" src={logo} alt="logo" />
-            <h1 className="intro">Hello,<br />I'm Christine <br /> of SMDC</h1>
+            <img className='smdc-image' src={smdcImage} alt="photo" />
+            <p id='home-description'>Hello, I'm Christine - dedicated to helping you secure the best property deals with SMDC. 
+                    Connect with me through the links here or save my contact instantly.</p>
             <div className="userImage">
                 <img src={userImage} alt="photo" />
-                <Link to="/info" className='continue'>Let's Connect!</Link>
+                <Link to="/info" className='continue' id='home-continue'>Let's Connect!</Link>
             </div>
         </div>
     );

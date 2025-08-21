@@ -1,4 +1,4 @@
-import profilePic from './assets/profilePic.jpeg'
+import profilePic from './assets/profilePic.png'
 import facebookLogo from './assets/facebook-logo.png'
 import instagramLogo from './assets/Instagram-Logo.png'
 import youtubeLogo from './assets/Youtube-logo.png'
@@ -13,12 +13,11 @@ function Info(){
     return(
         <div className='info-container'>
             <div className='info-intro'>
-                <img className='info-profilePic' src={profilePic} alt="profilePic" />
-                <p className='info-name'>Christine S. Dayawon</p>
-                <p className='info-desc'>
-                    Hello, I'm Christine - dedicated to helping you secure the best property deals with SMDC. 
-                    Connect with me through the links below or save my contact instantly.
-                </p>
+                <div className='info-profilePic-container'>
+                     <img className='info-profilePic' src={profilePic} alt="profilePic" />
+                </div>
+                <p className='info-name'>Christine S. Dayawon, RES</p>
+                <p className='info-accr'>PRC accr. # 13158 <br /> DHSUD accr. # 18052</p>
                 <div className='info-contacts'>
                     <button><a href="tel: +639989815844"><i className="fas fa-phone"></i></a></button>
                     <button><a href="https://m.me/CSDyourPropertyFinder"><i className="fas fa-comment-dots"></i></a></button>
@@ -38,7 +37,7 @@ function Info(){
                 </div>
                 <div className='youtube' id='links'>
                     <img src={youtubeLogo} alt="youtube" />
-                    <p>Subscribe in Youtube</p>
+                    <p>Subscribe on Youtube</p>
                     <button><a href="https://www.youtube.com/@ChristineSD.19"><i class="fas fa-link"></i></a></button>
                 </div>
                 <div className='whatsApp' id='links'>
@@ -58,12 +57,12 @@ function Info(){
                 </div>
                 <div className='threads' id='links'>
                     <img src={threadsLogo} alt="threads" />
-                    <p>Chat with me on Viber</p>
+                    <p>Chat with me on Threads</p>
                     <button><a href="https://connect.viber.com/business/7d07e364-75b7-11f0-ad22-e678e33e3231"><i class="fas fa-link"></i></a></button>
                 </div>
                 <div className='telegram' id='links'>
                     <img src={telegramLogo} alt="telegram" />
-                    <p>Follow me on Tiktok</p>
+                    <p>Message me on Telegram</p>
                     <button><a href="https://www.tiktok.com/@christine.sd"><i class="fas fa-link"></i></a></button>
                 </div>
             </div>

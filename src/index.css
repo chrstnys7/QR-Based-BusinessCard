@@ -4,65 +4,63 @@ body {
 }
 
 /*Homepage*/
+/* HomeScreen.css */
 .container {
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  max-width: 100%;
+  text-align: center;
+  font-family: Arial, sans-serif;
 }
 
 .smdc-image {
   width: 100%;
+  max-width: 350px;  /* keeps it nice for phones */
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 16px;
   margin-top: 70px;
 }
 
 #home-description {
-    width: 230px;
-    position: absolute;
-    right: 0;
-    top: 35%;
-    color: blue;
-    font-size: 0.9rem;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  color: blue;
+  padding: 0 10px;
 }
 
 .userImage {
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    position: relative; /* Add for absolute positioning */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 
 .userImage img {
-    width: 380px;
-    height: auto;
-    object-fit: cover;
-    margin-left: -240px;
-    margin-top: -130px;
-   
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: contain;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
-#home-continue {
-    position: absolute;
-    left: 50%;
-    bottom: 10%;
-    transform: translateX(-50%);
-    background-color: blue;
-    border: none;
-    border-radius: 15px;
-    color: #fff;
-    font-size: 1.1rem; 
-    font-weight: 700; 
-    cursor: pointer;
-    padding: 6px 35px;
-    text-decoration: none;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);;
-    transition: color 0.2s ease;
+.continue {
+  background-color: blue;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
 .continue:hover {
-    color: #007bff;
+  color: #007bff;
 }
 
 /*User Information*/
@@ -206,45 +204,22 @@ body {
 }
 
 @media (max-width: 400px) {
-   #home-description {
-        top: 31%;
-        font-size: 0.8rem;
-        width: 200px;
-    }
-
-    .userImage img {
-      margin-top: -100px;
-      margin-left: -170px;
-      width: 350px;
-    }
-
-    .smdc-image {
-      margin-top: 150px;
-    }
-
-    #home-continue {
-      padding: 5px 15px;
-    }
-}
-
-@media (max-width: 320px) {
   .smdc-image {
-      margin-top: 170px;
-    }
+    max-width: 260px;
+  }
 
-    #home-description {
-        top: 42%;
-        font-size: 0.7rem;
-        width: 180px;
-    }
+  #home-description {
+    font-size: 12px;
+    padding: 0 6px;
+  }
 
-    .userImage img {
-      width: 300px;
-      margin-top: -90px;
-      margin-left: -150px;
-    }
+  .userImage img {
+    width: 200px;
+    height: 200px;
+  }
 
-    #home-continue {
-      padding: 5px 20px;
-    }
+  .continue {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
 }
